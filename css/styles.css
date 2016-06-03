@@ -20,3 +20,12 @@ body {
 h2, label {
   color: #000;
 }
+
+label {
+  font-size: 1.4em;
+  margin: .2em;
+}
+
+.btn {
+  margin: 1em;
+}
