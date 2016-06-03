@@ -1,12 +1,6 @@
-/*This file is for your custom js.  All yours*/
-
-// Function for capturing form input
-
 $(function () {
   $("form#vacation-questionnaire").submit(function(event) {
     event.preventDefault();
-
-    // Declare local variable for each vacation
 
     var washingtonDC = 0;
     var newOrleans = 0;
@@ -19,17 +13,11 @@ $(function () {
     var india = 0;
     var england = 0;
 
-    // declare local variable for each question
-
     var season = $("input[name=season]:checked").val();
     var weather = $("input[name=weather]:checked").val();
     var duration = $("input[name=duration]:checked").val();
     var activities = $("input[name=activities]:checked").val();
     var budget = $("input[name=budget]:checked").val();
-
-    // conditional statement incrementing each vacation variable given each question response
-
-    //Question 1
 
     if (season === "spring") {
       washingtonDC += 1;
@@ -56,8 +44,6 @@ $(function () {
       ecuador += 1;
     }
 
-    //Question 2
-
     if (weather === "hot") {
       newOrleans += 1;
       ecuador += 1;
@@ -67,7 +53,6 @@ $(function () {
       newEngland += 1;
       alaska += 1;
     }
-
     else {
       washingtonDC += 1;
       newZealand += 1;
@@ -76,14 +61,11 @@ $(function () {
       england += 1;
     }
 
-    //Question 3
-
     if (duration === "weekend") {
       washingtonDC += 1;
       newOrleans += 1;
       newEngland += 1;
     }
-
     else if (duration === "week") {
       washingtonDC += 1;
       newOrleans += 1;
@@ -92,7 +74,6 @@ $(function () {
       greece += 1;
       england += 1;
     }
-
     else {
       ecuador += 1;
       newZealand += 1;
@@ -101,8 +82,6 @@ $(function () {
       japan += 1;
       india += 1;
     }
-
-    //Question 4
 
     if (activities === "outdoor") {
       ecuador += 1;
@@ -110,7 +89,6 @@ $(function () {
       newEngland += 1;
       alaska += 1;
     }
-
     else if (activities === "cultural") {
       washingtonDC += 1;
       greece += 1;
@@ -118,14 +96,11 @@ $(function () {
       india += 1;
       england += 1;
     }
-
     else {
       newOrleans += 1;
       greece += 1;
       japan += 1;
     }
-
-    //Question 5
 
     if (budget === "economy") {
       newOrleans += 1;
@@ -135,15 +110,12 @@ $(function () {
       greece += 1;
       india += 1;
     }
-
     else {
       washingtonDC += 1;
       newZealand += 1;
       japan += 1;
       england += 1;
     }
-
-    // Logic to evaluate highest total among vacation variables
 
     if (washingtonDC >= newOrleans && washingtonDC >= ecuador && washingtonDC >= newZealand && washingtonDC >= newEngland && washingtonDC >= alaska && washingtonDC >= greece && washingtonDC >= japan && washingtonDC >= india && washingtonDC >= england) {
       $("#vacation-questionnaire-carousel").carousel(5);
