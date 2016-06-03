@@ -29,5 +29,13 @@ label {
 }
 
 header h1 {
-  color: #ff8080;
+  color: #002266;
+  margin-bottom: .5em;
+  padding-bottom: .3em;
+  border-bottom: 1px solid #002266;
+}
+
+.vacation-slide {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid #fff;
 }
