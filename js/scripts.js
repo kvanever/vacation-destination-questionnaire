@@ -1,8 +1,5 @@
 /*This file is for your custom js.  All yours*/
 
-
-
-
 // Function for capturing form input
 
 $(function () {
