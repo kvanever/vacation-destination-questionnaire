@@ -1,1 +1,22 @@
 /*This file is for your custom css.  All yours*/
+
+body {
+  background-color: #e6eeff;
+}
+
+.carousel {
+  height: 400px;
+}
+
+.carousel-caption {
+  text-shadow: none;
+}
+
+.carousel .item {
+  height: 400px;
+  background-color: transparent;
+}
+
+h2, label {
+  color: #000;
+}
