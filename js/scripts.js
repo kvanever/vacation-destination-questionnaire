@@ -143,7 +143,36 @@ $(function () {
       england += 1;
     }
 
+    // Logic to evaluate highest total among vacation variables
 
-
-
+    if (washingtonDC >= newOrleans && washingtonDC >= ecuador && washingtonDC >= newZealand && washingtonDC >= newEngland && washingtonDC >= alaska && washingtonDC >= greece && washingtonDC >= japan && washingtonDC >= india && washingtonDC >= england) {
+      $("#vacation-questionnaire-carousel").carousel(5);
+    }
+    else if (newOrleans >= ecuador && newOrleans >= newZealand && newOrleans >= newEngland && newOrleans >= alaska && newOrleans >= greece && newOrleans >= japan && newOrleans >= india && newOrleans >= england) {
+      $("#vacation-questionnaire-carousel").carousel(6);
+    }
+    else if (ecuador >= newZealand && ecuador >= newEngland && ecuador >= alaska && ecuador >= greece && ecuador >= japan && ecuador >= india && ecuador >= england) {
+      $("#vacation-questionnaire-carousel").carousel(7);
+    }
+    else if (newZealand >= newEngland && newZealand >= alaska && newZealand >= greece && newZealand >= japan && newZealand >= india && newZealand >= england) {
+      $("#vacation-questionnaire-carousel").carousel(8);
+    }
+    else if (newEngland >= alaska && newEngland >= greece && newEngland >= japan && newEngland >= india && newEngland >= england) {
+      $("#vacation-questionnaire-carousel").carousel(9);
+    }
+    else if (alaska >= greece && alaska >= japan && alaska >= india && alaska >= england) {
+      $("#vacation-questionnaire-carousel").carousel(10);
+    }
+    else if (greece >= japan && greece >= india && greece >= england) {
+      $("#vacation-questionnaire-carousel").carousel(11);
+    }
+    else if (japan >= india && japan >= england) {
+      $("#vacation-questionnaire-carousel").carousel(12);
+    }
+    else if (india >= england) {
+      $("#vacation-questionnaire-carousel").carousel(13);
+    }
+    else {
+      $("#vacation-questionnaire-carousel").carousel(14);
+    }
 });
