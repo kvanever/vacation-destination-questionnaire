@@ -1,23 +1,26 @@
 /*This file is for your custom js.  All yours*/
 
-// Declare global variable for each vacation
 
-var washingtonDC;
-var newOrleans;
-var ecuador;
-var newZealand;
-var newEngland;
-var alaska;
-var greece;
-var japan;
-var india;
-var england;
+
 
 // Function for capturing form input
 
 $(function () {
-  $("#vacation-questionnaire").submit(function(event) {
+  $("form#vacation-questionnaire").submit(function(event) {
     event.preventDefault();
+
+    // Declare local variable for each vacation
+
+    var washingtonDC = 0;
+    var newOrleans = 0;
+    var ecuador = 0;
+    var newZealand = 0;
+    var newEngland = 0;
+    var alaska = 0;
+    var greece = 0;
+    var japan = 0;
+    var india = 0;
+    var england = 0;
 
     // declare local variable for each question
 
@@ -104,7 +107,7 @@ $(function () {
 
     //Question 4
 
-    if (activites === "outdoor") {
+    if (activities === "outdoor") {
       ecuador += 1;
       newZealand += 1;
       newEngland += 1;
@@ -175,4 +178,5 @@ $(function () {
     else {
       $("#vacation-questionnaire-carousel").carousel(14);
     }
+  });
 });
